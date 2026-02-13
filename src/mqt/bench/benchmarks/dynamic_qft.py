@@ -18,9 +18,7 @@ from ._registry import register_benchmark
 
 @register_benchmark("dynamic_qft", description="Dynamic Quantum Fourier Transformation and Measurement (DQFT + M)")
 def create_circuit(num_qubits: int) -> QuantumCircuit:
-    """Returns a quantum circuit implementing the Dynamic Quantum Fourier Transform and Measurement algorithm, where the 
-    measurement outcomes are the classical control of the subsequent phase gates. 
-    The circuit consists of a sequence of Hadamard gates, measurements, and classically controlled phase gates and is based on the circuit described in Phys. Rev. Lett. 133, 150602 (2024).
+    """Returns a quantum circuit implementing the Dynamic Quantum Fourier Transform and Measurement algorithm, where the measurement outcomes are the classical control of the subsequent phase gates. The circuit consists of a sequence of Hadamard gates, measurements, and classically controlled phase gates and is based on the circuit described in Phys. Rev. Lett. 133, 150602 (2024).
 
     Arguments:
         num_qubits: number of qubits of the returned quantum circuit. Must be ≤ 60.
