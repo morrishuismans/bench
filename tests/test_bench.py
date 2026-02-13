@@ -234,6 +234,7 @@ def test_graphstate_seed() -> None:
     assert qc_no_seed.num_qubits == 5
     assert qc_no_seed.name == "graphstate"
 
+
 def test_dynamical_qft() -> None:
     """Test the creation of the Dynamic QFT."""
     qc = create_circuit("dynamic_qft", 5)
@@ -248,6 +249,7 @@ def test_dynamical_qft() -> None:
     assert hadamard_count == 5
     assert measurement_count == 5
     assert if_else_count == 5
+
 
 @pytest.mark.parametrize("num_qubits", [17, 34, 51, 68])
 def test_shors_nine_qubit_code_circuit_structure(num_qubits: int) -> None:
