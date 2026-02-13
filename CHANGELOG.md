@@ -11,8 +11,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Added
 
+- ✨ Add Dynamic QFT circuit as a dynamical benchmarking circuit ([#807]) ([**@morrishuismans**])
 - ✨ Add support for compiling `if_test` for all gatesets and devices ([#805]) ([**@adnathanail**])
-- ✨ Add Dynamical QFT + Measurement circuit as a dynamical benchmarking circuit ([#807]) ([**@morrishuismans**])
 - ✨ Add Shor's 9 Qubit Code benchmark ([#803]) ([**@adnathanail**])
 - ✨ Add 7 Qubit Steane Code benchmark ([#814]) ([**@adnathanail**])
 
