@@ -34,5 +34,5 @@ def create_circuit(num_qubits: int) -> QuantumCircuit:
         qc.measure(q[i], c[i])
         with qc.if_test((c[i], 1)):
             for j in range(1, num_qubits - i):
-                qc.p(np.pi / 2 ** j, q[j + i])
+                qc.p(np.pi / 2**j, q[j + i])
     return qc
